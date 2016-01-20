@@ -6,13 +6,15 @@
 
 ## How To Get Started
 
-You can use this category through one line code.
+You can use this class through one line code.
 
+ ```` objective-c
 [BDImagePicker showImagePickerFromViewController:self allowsEditing:YES finishAction:^(UIImage *image) {
     if (image) {
         [sender setBackgroundImage:image forState:UIControlStateNormal];
     }
-}];
+}]; 
+````
 
 ## Communication
 
