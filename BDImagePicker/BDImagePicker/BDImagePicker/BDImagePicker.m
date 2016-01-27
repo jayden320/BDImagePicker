@@ -71,7 +71,7 @@ static BDImagePicker *bdImagePickerInstance = nil;
     }else if ([title isEqualToString:@"从相册选择"]) {
         UIImagePickerController *picker = [[UIImagePickerController alloc] init];
         picker.delegate = self;
-        picker.allowsEditing = YES;
+        picker.allowsEditing = _allowsEditing;
         [_viewController presentViewController:picker animated:YES completion:nil];
     }else {
         bdImagePickerInstance = nil;
